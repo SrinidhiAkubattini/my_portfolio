@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #e8e7e7;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.75);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-brand {
+      color: #38bdf8 !important;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      color: #38bdf8 !important;
+    }
+
+    #about {
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(15, 23, 42, 0.7);
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    .about-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #77b6e3;
+    }
+
+    .about-container p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #cec8c8;
+      margin-bottom: 30px;
+    }
+
+    .about-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0077b5;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .skill-badge {
+      background-color: #0077b5;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video class="video-bg" autoplay muted loop>
+    <source src="images/background.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header with Bootstrap Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Srinidhi Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="Project.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="Internship.html">Internship</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="about-container">
+      <img src="images/myimag.jpg" alt="Srinidhi" class="about-img" />
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm <strong>Srinidhi Akubattini</strong>, a passionate and creative Python Full Stack Developer based in India...
+      </p>
+      <p>
+        I have experience working on various projects...
+      </p>
+
+      <div class="skills">
+        <div class="skill-badge">HTML</div>
+        <div class="skill-badge">CSS</div>
+        <div class="skill-badge">Python</div>
+        <div class="skill-badge">React</div>
+        <div class="skill-badge">Bootstrap</div>
+        <div class="skill-badge">Git</div>
+      </div>
+
+      <h2>Tools</h2>
+      <p>VS Code, GitHub, Visual Studio2022, MySQL, TurboC</p>
+
+      <h2>Certificates</h2>
+      <p>AWS Academy Graduate - Cloud Foundations (08/2024-09/2024)</p>
+      <p>Internship on Networking by Eduskills (02/2024-03/2024)</p>
+
+      <h2>Languages</h2>
+      <p>Telugu <br/> English</p>
+
+      <h2>Interests</h2>
+      <i class="fa-solid fa-music"></i> Music 
+      <i class="fa-solid fa-gamepad"></i> Gaming
+      <i class="fa-solid fa-camera"></i> Photography
+      <i class="fa-solid fa-plane"></i> Traveling
+      <i class="fa-solid fa-basketball-ball"></i> Sports
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
